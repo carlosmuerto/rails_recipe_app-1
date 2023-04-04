@@ -29,6 +29,8 @@ Rails.application.configure do
   config.serve_static_assets = true
   config.assets.digest = true
   
+  config.logger = Logger.new(STDOUT)
+
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
